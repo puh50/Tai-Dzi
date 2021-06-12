@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Новый Тайцзи: контакты</title>
+    <link type="text/css" rel="stylesheet" href="styles/normalize.css">
+	<link type="text/css" rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+	<div class="karkas">
+		<div class="header">
+			<img src="images/footer-logo.png" alt="" />
+			<h2>не делай лишнего, отбрось недостатки, пребывай в спокойствии, накапливай СИЛУ</h2>
+		</div>		
+		
+		<div class="content">
+			<aside class="content-left">
+				<nav class="menu-main">
+				<ul id="menu">
+					<li><a href="index.html">главная</a></li>
+					<li><a href="02_basis.html">основы</a>
+						<ul id="submenu">
+							<!-- <li><a href="">история</a></li>
+							<li><a href="">философия</a></li>
+							<li><a href="">принципы</a></li>
+							<li><a href="">стили</a></li>
+							<li><a href="">источники</a></li> -->
+						</ul>
+					</li>
+					<li><a href="03_taiji.html">новое <br />тайцзи</a>
+						<ul id="submenu">
+							<!-- <li><a href="">разминка</a></li>
+							<li><a href="">база</a></li>
+							<li><a href="">комплекс</a></li>
+							<li><a href="">практика</a></li>
+							<li><a href="">советы</a></li> -->
+						</ul>
+					</li>
+					<li><a href="04_project.html">проекты</a>
+						<ul id="submenu">
+							<!-- <li><a href="">lunmen</a></li>
+							<li><a href="">чанг</a></li>
+							<li><a href="">айкидо</a></li>
+							<li><a href="">ой</a></li>
+							<li><a href="">разное</a></li> -->
+						</ul>
+					</li>	
+					<li><a href="05_contact.html">контакты</a></li>				
+				</ul>
+				</nav>
+
+                <div class="burger pull-right">
+                    <div class="burger-item burger-item-1"></div>
+                    <div class="burger-item burger-item-2"></div>
+                    <div class="burger-item burger-item-3"></div>
+                </div>
+				
+            </aside>
+            
+            <div class="fon_contnt_left">
+                <img id="ie_1" src="images/head_ie-1.png" alt="" />
+            </div>
+					
+            <button class="to-top" title="Вверх"><span class="to-top__arrow">&#8607;</span></button>
+            <div class="main">
+                <div id="d"><h3><span>"НОВОЕ ТАЙЦЗИЦЮАНЬ" в Гомеле</span></h3></div>
+                    <h2>Контакты<h2>
+            </div>
+            
+		</div>
+		
+		<div class="footer">						
+			<ul>
+				<li>© авторская разработка сайта</li>
+				<li>© Николай Бруевич, 2019</li>
+				<li>E-mail: <a href="mailto:E-mail: lunmen@mail.ru">lunmen@mail.ru</a></li>				
+			</ul>
+		</div>
+    </div>
+    
+    <script  type="text/javascript" src ="js/jqmin.1.10.1.js"></script>
+	<script  type="text/javascript" src ="js/jquery.mnmenu.js"></script>
+    <script  type="text/javascript" src ="js/to-top.js"></script>
+    <script>
+        $(document).on('ready', function() {
+                $('#menu').mnmenu();
+                $('.burger').click(function() {
+                $(this).toggleClass('open');
+                $('.menu-main').toggleClass('open');
+                $('body').toggleClass('noscroll');
+            });
+            $('#submenu').click(function() {
+                $('.burger').toggleClass('open');
+                $('.menu-main').toggleClass('open');
+                $('body').toggleClass('noscroll');
+            });
+        });            
+    </script>
+  </body>
+</html>
